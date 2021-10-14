@@ -1,0 +1,125 @@
+﻿<Application x:Class="WpfApplication1.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:WpfApplication1"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <Style x:Key="Buttons" TargetType="{x:Type Button}">
+            <Setter Property="Background" Value="#22212e" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="Opacity" Value="0.9" />
+            <Setter Property="FontFamily" Value="/font/OpenSans-Italic.ttf#OpenSans-Italic" />
+            
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="DarkGoldenrod"/>
+                    <Setter Property="Opacity" Value="0.9"></Setter>
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Background" Value="GoldenRod"></Setter>
+                    <Setter Property="Opacity" Value="0.9"></Setter>
+                </Trigger>
+            </Style.Triggers>
+            
+        </Style>
+        <Style x:Key="CloseButton" TargetType="{x:Type Button}">
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="Height" Value="30"></Setter>
+            <Setter Property="Width" Value="30"></Setter>
+            
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            
+        </Style>
+        
+        <Style x:Key="Circle3" TargetType="{x:Type Ellipse}">
+            <Setter Property="Fill" Value="Transparent"></Setter>
+            
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding IsMouseOver,ElementName=XImage}" Value="True">
+                    <Setter Property="Fill" Value="Red"/>
+                </DataTrigger>
+                
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Fill" Value="red"></Setter>
+                </Trigger>
+
+            </Style.Triggers>
+        </Style>
+        
+        <Style x:Key="Circle2" TargetType="{x:Type Ellipse}">
+            <Setter Property="Fill" Value="Transparent"></Setter>
+            
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding IsMouseOver,ElementName=YImage}" Value="True">
+                    <Setter Property="Fill" Value="orange"/>
+                </DataTrigger>
+                
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Fill" Value="Orange"></Setter>
+                </Trigger>
+
+            </Style.Triggers>
+        </Style>
+        
+        <Style x:Key="Circle1" TargetType="{x:Type Ellipse}">
+            <Setter Property="Fill" Value="Transparent"></Setter>
+            
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding IsMouseOver,ElementName=ZImage}" Value="True">
+                    <Setter Property="Fill" Value="ForestGreen"/>
+                </DataTrigger>
+                
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Fill" Value="ForestGreen"></Setter>
+                </Trigger>
+
+            </Style.Triggers>
+        </Style>
+        
+        <Style x:Key="images" TargetType="{x:Type Button}">
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="Opacity" Value="0.9" />
+            
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="Transparent"/>
+                    <Setter Property="Opacity" Value="0.9"></Setter>
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Background" Value="Transparent"></Setter>
+                    <Setter Property="Opacity" Value="0.9"></Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        
+    </Application.Resources>
+</Application>
