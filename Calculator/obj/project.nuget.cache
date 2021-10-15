@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OHeFl/8GEhm6DTDq60WzJNBC4Ija1LOjwBZwl/joIH75gV7GiRbRkM1GtZEIrhWpdVs7QWLE5DnwALJWCfx7eg==",
+  "dgSpecHash": "tv8g1RRgSl5pUQmSruV9Ju14QCZvG5PZIFa8RKxlX/f0TZ3gE1avsq4qhRrrnIPzMaHwrUhKRaBKFfYfo3NdZw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\leekh\\RiderProjects\\WpfApplication1\\WpfApplication1\\WpfApplication1.csproj",
+  "projectFilePath": "C:\\Users\\leekh\\RiderProjects\\WpfApplication1\\Calculator\\Calculator.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

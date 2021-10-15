@@ -16,11 +16,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\leekh\\RiderProjects\\WpfApplication1\\WpfApplication1\\WpfApplication1.csproj",
-      "projectName": "WpfApplication1",
-      "projectPath": "C:\\Users\\leekh\\RiderProjects\\WpfApplication1\\WpfApplication1\\WpfApplication1.csproj",
+      "projectUniqueName": "C:\\Users\\leekh\\RiderProjects\\WpfApplication1\\Calculator\\Calculator.csproj",
+      "projectName": "Calculator",
+      "projectPath": "C:\\Users\\leekh\\RiderProjects\\WpfApplication1\\Calculator\\Calculator.csproj",
       "packagesPath": "C:\\Users\\leekh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\leekh\\RiderProjects\\WpfApplication1\\WpfApplication1\\obj\\",
+      "outputPath": "C:\\Users\\leekh\\RiderProjects\\WpfApplication1\\Calculator\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [

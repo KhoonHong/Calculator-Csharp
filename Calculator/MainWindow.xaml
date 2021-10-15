@@ -39,6 +39,7 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             
+            <!-- Window title -->
             <Grid Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" >
                 <TextBlock FontFamily="/font/OpenSans-Italic.ttf#OpenSans-Italic" Foreground="white" Margin="20 10 0 0" FontSize="13">
                     Calculator
@@ -47,6 +48,7 @@
             
             <Grid Grid.Row="0" Grid.Column="3" Grid.ColumnSpan="2" Height="40" Width="120">
                 
+                <!-- Grid definitions -->
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
@@ -59,7 +61,7 @@
                     <Button.Template>
                         <ControlTemplate TargetType="Button">
                             <Grid>
-                                <Ellipse x:Name="ellipse" Style="{DynamicResource Circle1}"/>
+                                <Ellipse x:Name="ellipse" Style="{DynamicResource Minimize}"/>
                                 <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                             </Grid>
                         </ControlTemplate>
@@ -71,7 +73,7 @@
                     <Button.Template>
                         <ControlTemplate TargetType="Button">
                             <Grid>
-                                <Ellipse x:Name="ellipse" Style="{DynamicResource Circle2}"/>
+                                <Ellipse x:Name="ellipse" Style="{DynamicResource Expand}"/>
                                 <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                             </Grid>
                         </ControlTemplate>
@@ -83,7 +85,7 @@
                     <Button.Template>
                         <ControlTemplate TargetType="Button">
                             <Grid>
-                                <Ellipse x:Name="ellipse" Style="{DynamicResource Circle3}"/>
+                                <Ellipse x:Name="ellipse" Style="{DynamicResource Close}"/>
                                 <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                             </Grid>
                         </ControlTemplate>

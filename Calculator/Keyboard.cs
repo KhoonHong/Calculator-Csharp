@@ -8,84 +8,99 @@ namespace WpfApplication1
         private void UIElement_OnPreviewKeyDown(object sender, KeyEventArgs e)
         {
             e.Handled = true;
-            if (e.Key == Key.Enter || e.Key == Key.OemPlus)
+            switch (e.Key)
             {
                 //Process user input
-                Output_Click(sender, e);
-            }
-            else if (e.Key == Key.NumPad0 || e.Key == Key.D0)
-            {
-                SetOutput("0");
-            }
-            else if (e.Key == Key.NumPad1 || e.Key == Key.D1)
-            {
-                SetOutput("1");
-            }
-            else if (e.Key == Key.NumPad2 || e.Key == Key.D2)
-            {
-                SetOutput("2");
-            }
-            else if (e.Key == Key.NumPad3 || e.Key == Key.D3)
-            {
-                SetOutput("3");
-            }
-            else if (e.Key == Key.NumPad4 || e.Key == Key.D4)
-            {
-                SetOutput("4");
-            }
-            else if (e.Key == Key.NumPad5 || e.Key == Key.D5)
-            {
-                SetOutput("5");
-            }
-            else if (e.Key == Key.NumPad6 || e.Key == Key.D6)
-            {
-                SetOutput("6");
-            }
-            else if (e.Key == Key.NumPad7 || e.Key == Key.D7)
-            {
-                SetOutput("7");
-            }
-            else if (e.Key == Key.NumPad8 || e.Key == Key.D8)
-            {
-                SetOutput("8");
-            }
-            else if (e.Key == Key.NumPad9 || e.Key == Key.D9)
-            {
-                SetOutput("9");
-            }
-            else if (e.Key == Key.Decimal || e.Key == Key.OemPeriod)
-            {
-                SetOutput(".");
-            }
-            // '<' key
-            else if (e.Key == Key.Back)
-            {
-                Delete_Button(sender, e);
-            }
-            // '+' key
-            else if (((Keyboard.IsKeyDown(Key.LeftShift) || Keyboard.IsKeyDown(Key.RightShift)) && Keyboard.IsKeyDown(Key.OemPlus)) || e.Key == Key.Add)
-            {
-                SetOutput("+");
-            }
-            // '-'
-            else if (e.Key == Key.OemMinus || e.Key == Key.Subtract)
-            {
-                SetOutput("-");
-            }
-            // '×'
-            else if (e.Key == Key.Multiply || (e.Key == Key.LeftShift || e.Key == Key.RightShift) && e.Key == Key.D8)
-            {
-                SetOutput("×");
-            }
-            // '÷'
-            else if (e.Key == Key.Divide || (e.Key == Key.LeftShift || e.Key == Key.RightShift) && e.Key == Key.OemQuestion)
-            {
-                SetOutput("÷");
-            }
-            // Del key
-            else if (e.Key == Key.Delete)
-            {
-                Result.Text = "0";
+                case Key.Enter:
+                case Key.OemPlus:
+                    Output_Click(sender, e);
+                    break;
+                
+                case Key.NumPad0:
+                case Key.D0:
+                    SetOutput("0");
+                    break;
+                
+                case Key.NumPad1:
+                case Key.D1:
+                    SetOutput("1");
+                    break;
+                
+                case Key.NumPad2:
+                case Key.D2:
+                    SetOutput("2");
+                    break;
+                
+                case Key.NumPad3:
+                case Key.D3:
+                    SetOutput("3");
+                    break;
+                
+                case Key.NumPad4:
+                case Key.D4:
+                    SetOutput("4");
+                    break;
+                
+                case Key.NumPad5:
+                case Key.D5:
+                    SetOutput("5");
+                    break;
+                
+                case Key.NumPad6:
+                case Key.D6:
+                    SetOutput("6");
+                    break;
+                
+                case Key.NumPad7:
+                case Key.D7:
+                    SetOutput("7");
+                    break;
+                
+                case Key.NumPad8:
+                case Key.D8:
+                    SetOutput("8");
+                    break;
+                
+                case Key.NumPad9:
+                case Key.D9:
+                    SetOutput("9");
+                    break;
+                
+                case Key.Decimal:
+                case Key.OemPeriod:
+                    SetOutput(".");
+                    break;
+                
+                // '<' key
+                case Key.Back:
+                    Delete_Button(sender, e);
+                    break;
+                
+                // '+' key
+                case Key.Add:
+                    SetOutput("+");
+                    break;
+                
+                // '-' 
+                case Key.OemMinus:
+                case Key.Subtract:
+                    SetOutput("-");
+                    break;
+                
+                // '×'
+                case Key.Multiply:
+                    SetOutput("×");
+                    break;
+                
+                // '÷'
+                case Key.Divide:
+                    SetOutput("÷");
+                    break;
+                
+                // Del key
+                case Key.Delete:
+                    Result.Text = "0";
+                    break;
             }
         }
 

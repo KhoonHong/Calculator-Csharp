@@ -4,6 +4,7 @@
              xmlns:local="clr-namespace:WpfApplication1"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
+        <!-- target all square button types --> 
         <Style x:Key="Buttons" TargetType="{x:Type Button}">
             <Setter Property="Background" Value="#22212e" />
             <Setter Property="Foreground" Value="White" />
@@ -21,6 +22,7 @@
                 </Setter.Value>
             </Setter>
             
+            <!-- Actions taken if button is hovered or pressed -->
             <Style.Triggers>
                 <Trigger Property="IsMouseOver" Value="True">
                     <Setter Property="Background" Value="DarkGoldenrod"/>
@@ -31,8 +33,9 @@
                     <Setter Property="Opacity" Value="0.9"></Setter>
                 </Trigger>
             </Style.Triggers>
-            
         </Style>
+        
+        <!-- Buttons on the top right of the window -->
         <Style x:Key="CloseButton" TargetType="{x:Type Button}">
             <Setter Property="Background" Value="Transparent" />
             <Setter Property="Height" Value="30"></Setter>
@@ -47,10 +50,10 @@
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
-            
         </Style>
         
-        <Style x:Key="Circle3" TargetType="{x:Type Ellipse}">
+        <!--  -->
+        <Style x:Key="Close" TargetType="{x:Type Ellipse}">
             <Setter Property="Fill" Value="Transparent"></Setter>
             
             <Style.Triggers>
@@ -65,7 +68,8 @@
             </Style.Triggers>
         </Style>
         
-        <Style x:Key="Circle2" TargetType="{x:Type Ellipse}">
+        <!--  -->
+        <Style x:Key="Expand" TargetType="{x:Type Ellipse}">
             <Setter Property="Fill" Value="Transparent"></Setter>
             
             <Style.Triggers>
@@ -80,7 +84,8 @@
             </Style.Triggers>
         </Style>
         
-        <Style x:Key="Circle1" TargetType="{x:Type Ellipse}">
+        <!--  -->
+        <Style x:Key="Minimize" TargetType="{x:Type Ellipse}">
             <Setter Property="Fill" Value="Transparent"></Setter>
             
             <Style.Triggers>
